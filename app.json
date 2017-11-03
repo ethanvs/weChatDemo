@@ -1,21 +1,11 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/index/monthly/monthly",
-    "pages/index/vol/vol",
-    "pages/reading/reading",
-    "pages/reading/monthly/monthly",
-    "pages/reading/essay/essay",
-    "pages/reading/serial/serial",
-    "pages/reading/question/question",
-    "pages/music/music",
-    "pages/movie/movie",
-    "pages/history/history"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "ONE",
+    "navigationBarTitleText": "ONE-DEMO",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -26,23 +16,13 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "image/home.png",
-      "selectedIconPath": "image/home_active.png"
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home_active.png"
     }, {
-      "pagePath": "pages/reading/reading",
-      "text": "阅读",
-      "iconPath": "image/reading.png",
-      "selectedIconPath": "image/reading_active.png"
-    },{
-      "pagePath": "pages/music/music",
-      "text": "音乐",
-      "iconPath": "image/music.png",
-      "selectedIconPath": "image/music_active.png"
-    },{
-      "pagePath": "pages/movie/movie",
-      "text": "电影",
-      "iconPath": "image/movie.png",
-      "selectedIconPath": "image/movie_active.png"
+      "pagePath": "pages/news/news",
+      "text": "新闻",
+      "iconPath": "images/news.png",
+      "selectedIconPath": "images/news_active.png"
     }]
   }
 }
