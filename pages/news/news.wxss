@@ -1,0 +1,4 @@
+.news {
+  font-size: 48rpx;
+  text-align: center;
+}
