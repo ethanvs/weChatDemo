@@ -10,14 +10,14 @@ const defaultAlertMessage = '好像哪里出了小问题~ 请再试一次~';
  * @type {{en: string}}
  */
 const defaultShareText = {
-  en: 'iKcamp英语-学英语口语听力四六级'
+  en: '默认分享内容'
 };
 /*
  * 小程序默认标题栏文字
  * @type {string}
  */
 const defaultBarTitle = {
-  en: 'iKcamp英语学习'
+  en: '小程序学习demo'
 };
 /*
  * 文章默认图片
