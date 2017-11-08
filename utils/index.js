@@ -1,5 +1,5 @@
 'use strict'
-import Promise from '../lib/promise'
+import Promise from '../lib/promise/promise'
 import config from './config'
 import * as Mock from './mock'
 
