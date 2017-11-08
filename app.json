@@ -10,23 +10,6 @@
     "navigationBarTitleText": "ONE-DEMO",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
-    "color": "#888",
-    "selectedColor": "#89bdf7",
-    "backgroundColor": "#f8f8f8",
-    "borderStyle": "white",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "images/home.png",
-      "selectedIconPath": "images/home_active.png"
-    }, {
-      "pagePath": "pages/news/news",
-      "text": "新闻",
-      "iconPath": "images/news.png",
-      "selectedIconPath": "images/news_active.png"
-    }]
-  },
   "netWorkTimeout": {
     "request": 10000,
     "connectSocket": 10000,
