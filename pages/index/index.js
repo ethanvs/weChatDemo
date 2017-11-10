@@ -10,16 +10,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    page: 1, //当前加载第几页的数据
+    days: 3,
+    pageSize: 4,
+    totalSize: 0,
+    hasMore: true,// 用来判断下拉加载更多内容操作
+    articleList: [], // 存放文章列表数据，与视图相关联
+    defaultImg: config.defaultImg
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.requestArticle();
   },
-
+  /*
+   * 获取文章列表数据
+   */
+  requestArticle() {
+    util.request({
+      url: 'list',
+      mock: true,
+      data: {
+        tag: '微信热门',
+        start: this.data.page || 1,
+        days: this.data.days || 3,
+        pageSize: this.data.pageSize,
+        langs: config.appLang || 'en'
+      }
+    })
+    .then(res => {
+      console.log(res)
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
