@@ -19,6 +19,14 @@ Page({
     defaultImg: config.defaultImg
   },
 
+  clickFn() {
+    wx.showToast({
+      title: 'sss',
+      icon: 'success',
+      duration: 3000
+    });
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -44,11 +52,17 @@ Page({
       console.log(res)
     });
   },
+  getPhoneNumber: function (e) {
+    console.log('获取用户手机号');
+    console.log(e.detail);
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    wx.redirectTo({
+      url: '/pages/news/news'
+    })
   },
 
   /**
@@ -89,7 +103,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log(res.target)

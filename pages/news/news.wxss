@@ -2,3 +2,7 @@
   font-size: 48rpx;
   text-align: center;
 }
+.box {
+  background-color: blueviolet;
+  transition: all 1s;
+}

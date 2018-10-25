@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isOpen: true,
+    array: [{
+      label: 'sfdf',
+      value: 'aa',
+      children: [{
+        label: 'eee123',
+        value: 'dsfsfs'
+      }]
+    }, {
+      label: 'sdfdsfdsg',
+      value: 'bb'
+    }, {
+      label: 'sfdsf',
+      value: 'cc'
+    }]
+  },
 
+  kindToggle: function () {
+    console.log('$$$$$$$$$', this.data.isOpen)
+    this.setData({
+      isOpen: !this.data.isOpen
+    })
+  },
+
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail)
+    this.setData({
+      index: e.detail.value
+    })
   },
 
   /**

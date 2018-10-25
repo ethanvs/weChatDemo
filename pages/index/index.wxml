@@ -22,4 +22,6 @@
         </view>
     </view>
     <view class="no-more" hidden="">暂时没有更多内容</view>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button> 
+    <button class="weui-btn" type="primary" bindtap="clickFn">页面主操作 Normal</button>
 </view>   

@@ -1,3 +1,37 @@
 <view class="news">
   新闻页
+
+  <view class="kind-list__item">
+      <view class="weui-flex kind-list__item-hd" bindtap="kindToggle">
+          <view class="weui-flex__item">标题</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="kind-list__item-bd">
+          <view class="weui-cells" wx:if="{{isOpen}}">
+            <block >
+
+                    <view class="weui-cell__bd">wrer</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+
+            </block>
+            <block >
+
+                    <view class="weui-cell__bd">wrer</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+
+            </block>
+            <block >
+ 
+                    <view class="weui-cell__bd">wrer</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+
+            </block>
+          </view>
+      </view>
+  </view>
+
+  <picker mode="multiSelector" bindchange="bindPickerChange" value="{{index}}" range="{{array}}" range-key="label">
+      <button type="default">单列选择器</button>
+  </picker>
+
 </view>
